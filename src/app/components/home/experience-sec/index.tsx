@@ -3,36 +3,20 @@ import React from "react";
 const ExperienceSec = () => {
   const experiences = [
     {
-      year: "2018",
-      title: "Junior UX Designer",
-      company: "www.startup.com",
-      type: "Fulltime",
+      year: "Лято 2024",
+      title: "Учебен стаж / Клинична практика",
+      company: "Лечебно заведение – след завършване на втори курс",
+      type: "Стаж",
       description:
-        "Suffered alteration in some form by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",
+        "Наблюдение и подпомагане на ежедневната работа на медицинския екип. Запознаване с организацията и дейността на лечебното заведение. Комуникация с пациенти под ръководството на медицински специалисти.",
     },
     {
-      year: "2019",
-      title: "Senior UX Designer",
-      company: "www.googly.com",
-      type: "Remote",
+      year: "2023 – сега",
+      title: "Студент по Медицина",
+      company: "Медицински Университет Плевен",
+      type: "Редовно обучение",
       description:
-        "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem",
-    },
-    {
-      year: "2020-2022",
-      title: "Team Lead Designer",
-      company: "www.company.com",
-      type: "Fulltime",
-      description:
-        "Handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated",
-    },
-    {
-      year: "2023+",
-      title: "Team Lead Designer",
-      company: "www.latest.com",
-      type: "Fulltime",
-      description:
-        "Release of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing software",
+        "Прилагане на придобитите теоретични знания в реална клинична среда. Спазване на медицинската етика, конфиденциалността и установените правила за безопасност.",
     },
   ];
 
@@ -41,7 +25,7 @@ const ExperienceSec = () => {
       <div className="py-16 md:py-32">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-            <h2>Experience</h2>
+            <h2>Опит</h2>
             <p className="text-xl text-primary">( 02 )</p>
           </div>
 

@@ -1,42 +1,25 @@
 import { NextResponse } from "next/server";
-import { title } from "process";
 
 const contactBar = {
   contactItems: [
     {
       type: "email",
-      label: "hello@imsruthi.com",
+      label: "teodora.markova1@abv.bg",
       icon: "/images/icon/mail-icon.svg",
-      link: "mailto:hello@imsruthi.com"
+      link: "mailto:teodora.markova1@abv.bg"
     },
     {
       type: "phone",
-      label: "+901 5588 2500",
+      label: "088 797 9904",
       icon: "/images/icon/call-icon.svg",
-      link: "tel:+90155882500"
-    },
-    {
-      type: "website",
-      label: "www.mywebsite.com",
-      icon: "/images/icon/web-icon.svg",
-      link: "https://www.mywebsite.com"
+      link: "tel:+359887979904"
     }
   ],
   socialItems: [
     {
-      platform: "dribbble",
-      icon: "/images/icon/dribble-icon.svg",
-      link: "https://dribbble.com"
-    },
-    {
-      platform: "linkedin",
-      icon: "/images/icon/linkedin-icon.svg",
-      link: "https://linkedin.com"
-    },
-    {
       platform: "facebook",
       icon: "/images/icon/facebook-icon.svg",
-      link: "https://facebook.com"
+      link: "https://www.facebook.com/share/18WVCbpZ7P/?mibextid=wwXIfr"
     }
   ]
 };
@@ -45,48 +28,44 @@ const contactBar = {
 const educationData = {
   education: [
     {
-      title: "Lipsum Collage - 2010",
-      description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Koramangala collage."
+      title: "Медицински Университет Плевен",
+      description: "Студент, трети курс • 2023 – сега"
     },
     {
-      title: "Master Diploma - 2012",
-      description: "Combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable."
-    },
-    {
-      title: "Master in User Experience - 2014",
-      description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
+      title: "Средно образование",
+      description: "Завършила 2023"
     }
   ],
   skills: [
     {
-      name: "Figma",
+      name: "Отговорност",
       icon: "/images/home/education-skill/figma-icon.svg",
       rating: 5
     },
     {
-      name: "Photoshop",
+      name: "Организираност",
       icon: "/images/home/education-skill/photoshop-icon.svg",
       rating: 5
     },
     {
-      name: "Sketch",
+      name: "Работа в екип",
       icon: "/images/home/education-skill/sketch-icon.svg",
-      rating: 4
+      rating: 5
     },
     {
-      name: "Adobe XD",
+      name: "Комуникация",
       icon: "/images/home/education-skill/adobe-icon.svg",
       rating: 4
     },
     {
-      name: "Framer",
+      name: "Емпатия",
       icon: "/images/home/education-skill/framer-icon.svg",
       rating: 5
     },
     {
-      name: "Invasion",
+      name: "Внимание към детайла",
       icon: "/images/home/education-skill/invision-icon.svg",
-      rating: 3
+      rating: 4
     }
   ]
 }
@@ -94,28 +73,20 @@ const educationData = {
 const contactLinks = {
   socialLinks: [
     {
-      title: "Dribble",
-      href: "/"
-    },
-    {
       title: "Facebook",
-      href: "/"
-    },
-    {
-      title: "LinkedIn",
-      href: "/"
-    },
+      href: "https://www.facebook.com/share/18WVCbpZ7P/?mibextid=wwXIfr"
+    }
   ],
   contactInfo: [
     {
       type: "email",
-      label: "hello@imsruthi.com",
-      link: "mailto:hello@imsruthi.com"
+      label: "teodora.markova1@abv.bg",
+      link: "mailto:teodora.markova1@abv.bg"
     },
     {
       type: "phone",
-      label: "+901 5588 2500",
-      link: "tel:+90155882500"
+      label: "088 797 9904",
+      link: "tel:+359887979904"
     }
   ]
 }

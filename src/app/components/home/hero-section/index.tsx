@@ -2,33 +2,20 @@ import Image from "next/image";
 
 const index = () => {
   return (
-    <section className="relative hero-section overflow-hidden pt-35 md:pt-40 pb-12 lg:pb-30 xl:pt-52">
+    <section className="relative hero-section overflow-hidden pt-20 md:pt-28 pb-12 lg:pb-30 xl:pt-36">
       <div className="container">
         <div className="lg:flex grid grid-cols-1 sm:grid-cols-2 gap-7 md:gap-4 items-center">
           <div className="flex flex-col gap-4 md:gap-7 max-w-2xl">
             <div>
-              <div className="flex items-center gap-8">
-                <h1>I'm Sruthi</h1>
-                <div className="wave">
-                  <Image
-                    src={"/images/home/banner/wave-icon.svg"}
-                    alt="wave-icon"
-                    width={62}
-                    height={62}
-                    className=""
-                  />
-                </div>
+              <div>
+                <h1>Теодора Руменова Маркова</h1>
               </div>
-              <h1>UI/UX Designer</h1>
+              <h1>Студент по Медицина</h1>
             </div>
-            <p className="text-muted-foreground font-normal max-w-md xl:max-w-xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. variations of passages of Lorem Ipsum available, but the
-              majority have suffered alteration
-            </p>
+
           </div>
           <Image
-            src={"/images/home/banner/banner-img.png"}
+            src={"/images/home/banner/banner-img.jpg"}
             alt="banner-img"
             width={685}
             height={650}
@@ -38,7 +25,7 @@ const index = () => {
       </div>
       <div className="absolute right-0 top-0 hidden h-auto w-1/2 lg:block 2xl:h-171.5 2xl:w-187.5">
         <Image
-          src={"/images/home/banner/banner-img.png"}
+          src={"/images/home/banner/banner-img.jpg"}
           alt="banner-img"
           width={685}
           height={650}
