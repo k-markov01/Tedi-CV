@@ -1,5 +1,15 @@
 import Image from "next/image";
 import { educationData } from "@/app/data";
+import { ShieldCheck, Layout, Users, MessageCircle, Heart, Search } from "lucide-react";
+
+const skillIcons: Record<string, React.ReactNode> = {
+  "Отговорност": <ShieldCheck size={50} stroke="#FE4300" />,
+  "Организираност": <Layout size={50} stroke="#FE4300" />,
+  "Работа в екип": <Users size={50} stroke="#FE4300" />,
+  "Комуникация": <MessageCircle size={50} stroke="#FE4300" />,
+  "Емпатия": <Heart size={50} stroke="#FE4300" />,
+  "Внимание към детайла": <Search size={50} stroke="#FE4300" />,
+};
 
 const EducationSkills = () => {
 
@@ -43,12 +53,7 @@ const EducationSkills = () => {
                       className="p-4 xl:p-6 border border-muted rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between"
                     >
                       <div className="flex flex-col items-center gap-5">
-                        <Image
-                          src={value?.icon}
-                          alt="icon"
-                          width={70}
-                          height={70}
-                        />
+                        {skillIcons[value?.name] || null}
                         <p className="text-black font-normal">{value?.name}</p>
                       </div>
                       <div className="flex gap-1">
