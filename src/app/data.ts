@@ -1,6 +1,4 @@
-import { NextResponse } from "next/server";
-
-const contactBar = {
+export const contactBar = {
   contactItems: [
     {
       type: "email",
@@ -24,8 +22,7 @@ const contactBar = {
   ]
 };
 
-
-const educationData = {
+export const educationData = {
   education: [
     {
       title: "Медицински Университет Плевен",
@@ -37,40 +34,16 @@ const educationData = {
     }
   ],
   skills: [
-    {
-      name: "Отговорност",
-      icon: "/images/home/education-skill/figma-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Организираност",
-      icon: "/images/home/education-skill/photoshop-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Работа в екип",
-      icon: "/images/home/education-skill/sketch-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Комуникация",
-      icon: "/images/home/education-skill/adobe-icon.svg",
-      rating: 4
-    },
-    {
-      name: "Емпатия",
-      icon: "/images/home/education-skill/framer-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Внимание към детайла",
-      icon: "/images/home/education-skill/invision-icon.svg",
-      rating: 4
-    }
+    { name: "Отговорност", icon: "/images/home/education-skill/figma-icon.svg", rating: 5 },
+    { name: "Организираност", icon: "/images/home/education-skill/photoshop-icon.svg", rating: 5 },
+    { name: "Работа в екип", icon: "/images/home/education-skill/sketch-icon.svg", rating: 5 },
+    { name: "Комуникация", icon: "/images/home/education-skill/adobe-icon.svg", rating: 4 },
+    { name: "Емпатия", icon: "/images/home/education-skill/framer-icon.svg", rating: 5 },
+    { name: "Внимание към детайла", icon: "/images/home/education-skill/invision-icon.svg", rating: 4 }
   ]
-}
+};
 
-const contactLinks = {
+export const contactLinks = {
   socialLinks: [
     {
       title: "Facebook",
@@ -89,14 +62,4 @@ const contactLinks = {
       link: "tel:+359887979904"
     }
   ]
-}
-
-
-
-export const GET = async () => {
-  return NextResponse.json({
-    contactBar,
-    educationData,
-    contactLinks
-  });
 };

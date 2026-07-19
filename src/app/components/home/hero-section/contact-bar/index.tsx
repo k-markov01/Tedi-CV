@@ -1,25 +1,8 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { contactBar } from "@/app/data";
 
 const ContactBar = () => {
-  const [contactBarData, setContactBarData] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("/api/page-data");
-        if (!res.ok) throw new Error("Failed to fetch");
-        const data = await res.json();
-        setContactBarData(data?.contactBar);
-      } catch (error) {
-        console.error("Error fetching services:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <section>
@@ -28,7 +11,7 @@ const ContactBar = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 md:py-7">
             {/* Contact Items */}
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 md:gap-5 lg:gap-11">
-              {contactBarData?.contactItems?.map(
+              {contactBar.contactItems.map(
                 (value: any, index: number) => (
                   <Link
                     key={index}
@@ -53,7 +36,7 @@ const ContactBar = () => {
 
             {/* Social Items */}
             <div className="flex items-center justify-center md:justify-end gap-4 md:gap-2.5">
-              {contactBarData?.socialItems?.map((value: any, index: number) => (
+              {contactBar.socialItems.map((value: any, index: number) => (
                 <Link key={index} href={value?.link}>
                   <Image
                     src={value?.icon}
